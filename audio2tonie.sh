@@ -71,7 +71,8 @@ transcode_files() {
     local output="$2"
     local count="$3"
     echo "$SEPARATOR"
-    echo "Start transcoding: "
+    echo "Start transcoding: $(pwd) $input"
+    echo "$(file "$input")"
     echo "Creating $(basename "$output") with $count chapter(s)..."
     python3 "$OPUS_2_TONIE_PATH/opus2tonie.py" "$input" "$output" || { echo "Transcoding failed"; exit 1; }
 }
