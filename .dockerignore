@@ -1,0 +1,33 @@
+# Git
+.git
+.gitignore
+.github
+
+# Documentation
+README.md
+Readme.md
+LICENSE.md
+
+# Test files and data
+*.mp3
+*.m4a
+*.opus
+*.wav
+*.taf
+*.lst
+
+# Docker
+Dockerfile.*
+docker-compose.yml
+docker-compose.*.yml
+
+# Development files
+.vscode
+.idea
+*.log
+*.tmp
+
+# Build artifacts
+dist/
+build/
+target/
